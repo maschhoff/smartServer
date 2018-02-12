@@ -35,11 +35,11 @@ def get_weather():
 	logging.info("OpenWeatherMap wurden an openHAB uebertragen")
 	return "OpenWeatherMap wurden an openHAB uebertragen"
 
-@app.route('/sot/<string:text>', methods=['GET'])
-def get_sot(text):
+@app.route('/sot/<string:item>/<string:remote>/<string:text>', methods=['GET'])
+def get_sot(item,remote,text):
     url=soundoftext.createSound(text)
-    openweathermap.sendToOpenHAB("CastLRWZ_URI",url)
-    openweathermap.sendToOpenHAB("Wohnzimmer_Fernbedienung","PLAY")
+    openweathermap.sendToOpenHAB(item,url)
+    openweathermap.sendToOpenHAB(remote,"PLAY")
     logging.info("soundoftext wurden an openHAB uebertragen"+url)
     html="<!DOCTYPE html><html><body><audio controls autoplay><source src="+url+" type='audio/mpeg'></audio></body></html>"
     return html

@@ -12,7 +12,8 @@ def createSound(speak):
     while(status=="Pending"):
         response = requests.get(url + id, data=None, headers=headers)
         status=response.json()['status']
-        time.sleep(10)
+        if(status=="Pending"):
+          time.sleep(10)
     response = requests.get(url + id, data=None, headers=headers)
     location = response.json()['location']
     return location

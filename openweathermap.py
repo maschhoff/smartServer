@@ -46,7 +46,7 @@ def sendToOpenHAB(item,data):
     print("SEND TO OPENHAB - ITEM: "+item+" DATA: "+data)
     logging.info("SEND TO OPENHAB - ITEM: "+item+" DATA: "+data)
     #OpenHAB API aufrufen
-    url = "http://XX.XX.XX.XXX:8080/rest/items/"+item
+    url = "http://10.10.10.4:8080/rest/items/"+item
     #data = str(round(temp,9))
     #data_json = json.dumps(data) # bei json data={"jsondata"} und als response data=data_json
     headers = {'Content-type': 'text/plain'}
