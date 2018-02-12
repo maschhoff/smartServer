@@ -14,5 +14,5 @@ http://XX.XX.XX.XXX:3247/85:99:F7:EF:71:D2/21
 Wheather - send current wheather to openHAB  
 http://XX.XX.XX.XXX:3247/weather  
   
-Text to Speak - change a text to mp3 and send it to a chromecast device  
-http://XX.XX.XX.XXX:3247/sot/Hallo%20Welt!  
+Text to Speak - change a text to mp3 and send it to a chromecast device with cast url and remote
+http://XX.XX.XX.XXX:3247/sot/CastLRBAD_URI/Badezimmer_Fernbedienung/Text%20to%20speak
