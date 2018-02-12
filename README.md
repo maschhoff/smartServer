@@ -8,7 +8,8 @@ pip3 install flask
 python3 Server.py
 
 # Example  
-CometBlue - change temperature for one adapter with the mac 85:99:F7:EF:71:D2  
+CometBlue - change temperature for one adapter with the mac 85:99:F7:EF:71:D2 
+more info see github.com/mashhoff/cometblue  
 http://XX.XX.XX.XXX:3247/85:99:F7:EF:71:D2/21  
   
 Wheather - send current wheather to openHAB  
